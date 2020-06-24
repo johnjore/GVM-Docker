@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+APP="openvas"
+
 STAGE="${1}"
 [[ "${STAGE}" == "" ]] && STAGE="stable"
 

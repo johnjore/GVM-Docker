@@ -1,6 +1,8 @@
   
 #!/usr/bin/env bash
 
+APP="ospd-openvas"
+
 STAGE="${1}"
 [[ "${STAGE}" == "" ]] && STAGE="stable"
 

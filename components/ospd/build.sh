@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+APP="ospd"
+
 STAGE="${1}"
 [[ "${STAGE}" == "" ]] && STAGE="stable"
 

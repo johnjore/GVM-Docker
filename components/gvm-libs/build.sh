@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+APP="gvm-libs"
+
 STAGE="${1}"
 [[ "${STAGE}" == "" ]] && STAGE="stable"
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+APP="openvas-smb"
+
 STAGE="${1}"
 [[ "${STAGE}" == "" ]] && STAGE="stable"
 

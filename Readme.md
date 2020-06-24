@@ -93,6 +93,18 @@ docker logs gvm
 If you see "Your GVM 11 container is now ready to use!" then, you guessed it, your container is ready to use.
 
 
+### Run with docker-components
+```console
+$ cd /GVM-Docker/dc
+$ docker-compose -p gvm -f docker-compose.yml up -d
+```
+### Run docker-compse with ansible 
+
+```console
+$ cd ansible
+$ ansible-playbook start.yml
+```
+
 
 ## GVM image Environment Variables
 
