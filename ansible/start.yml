@@ -8,7 +8,7 @@
     - name: "Run GVM docker-compose"
       docker_compose:
         project_name: gvm
-        project_src: 
+        project_src: ../dc
         files: docker-compose.yml
       register: output
 
