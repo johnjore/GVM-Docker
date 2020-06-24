@@ -1,0 +1,57 @@
+---
+
+version: '3'
+
+services:
+  gvm-postgres:
+    image: 
+    hostname: 
+    restart: 
+    ports:
+    - 
+    volumes:
+    - 
+    environment:
+
+
+  gvm-openvas:
+    image: 
+    hostname: 
+    restart: 
+    ports:
+    - 
+    volumes:
+    - 
+
+
+
+  gvm-gvmd:
+    image: 
+    hostname: 
+    restart: 
+    ports:
+    - 
+    volumes:
+    - 
+    environment:
+
+    links:
+
+    depends_on:
+
+    
+
+
+  gvm-gsa:
+    image: 
+    hostname: 
+    restart: 
+    ports:
+    - 
+    volumes:
+    - 
+    environment:
+
+    links:
+    
+    depends_on:
