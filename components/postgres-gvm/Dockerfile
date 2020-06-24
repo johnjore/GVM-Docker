@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM dgiorgio/postgres:latest
 
 RUN apt update -y && apt install -y --no-install-recommends --fix-missing \
   git cmake gcc make clang-format pkg-config libglib2.0-dev libgpgme11-dev \
@@ -19,7 +19,7 @@ RUN ln -sf libical.so libical.so.3 \
   && ln -sf libgcrypt.so libssh-gcrypt.so.4 \
   && ln -sf libc.so libc.so.6
 
-#COPY 
+COPY --from=securecompliancesolutions/gvmd:latest /usr/local/lib/libgvm* /usr/local/lib/
 
 WORKDIR /usr/local/lib
 RUN ln -sf libgvm_base.so.*~git* libgvm_base.so.11 \

@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM securecompliancesolutions/gvmlibs:latest
 
 # openvas-smb deps: git cmake gcc make pkg-config gcc-mingw-w64
 #                   perl-base heimdal-dev libpopt-dev libglib2.0-dev
