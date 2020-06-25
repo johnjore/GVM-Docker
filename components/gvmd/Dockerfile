@@ -1,4 +1,5 @@
 FROM securecompliancesolutions/gvmlibs:latest
+
 RUN apt update -y && apt install -y --no-install-recommends --fix-missing \
   wget gnupg2 \
   && echo 'deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
