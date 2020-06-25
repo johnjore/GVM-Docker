@@ -4,6 +4,7 @@ version: '3'
 
 services:
   gvm-postgres:
+    image: "securecompliancesolutions/postgres-gvm:latest"
     hostname: "postgres-gvm"
     restart: always
     ports:
@@ -17,6 +18,7 @@ services:
 
 
   gvm-openvas:
+    image: "securecompliancesolutions/openvas:latest"
     hostname: "openvas"
     restart: always
     ports:
@@ -31,6 +33,7 @@ services:
     #   - COMMUNITY_NVT_RSYNC_FEED=rsync://gvm-nvt-feed-server:/nvt-feed # Custom NVT server https://github.com/dgiorgio/gvm-nvt-feed-server
 
   gvm-gvmd:
+    image: "securecompliancesolutions/gvmd:latest"
     hostname: "gvmd"
     restart: always
     ports:
@@ -51,6 +54,7 @@ services:
   
 
   gvm-gsa:
+    image: "securecompliancesolutions/gsa:latest"
     hostname: "gsa"
     restart: always
     ports:

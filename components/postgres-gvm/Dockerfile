@@ -1,4 +1,4 @@
-FROM dgiorgio/postgres:latest
+FROM securecompliancesolutions/postgres:latest
 
 RUN apt update -y && apt install -y --no-install-recommends --fix-missing \
   git cmake gcc make clang-format pkg-config libglib2.0-dev libgpgme11-dev \
